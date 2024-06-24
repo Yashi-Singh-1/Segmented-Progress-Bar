@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.progress-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.segmented-progress {
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.segment {
+    float: left;
+    height: 100%;
+    background-color: #4caf50;
+    animation: segment-grow 2s linear forwards;
+}
+
+@keyframes segment-grow {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 20%; /* Adjust this percentage based on the number of segments */
+    }
+}
